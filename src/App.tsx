@@ -28,6 +28,9 @@ import {
 import { Product, CartItem, SkinType, SkinConcern } from './types';
 import { PRODUCTS, SKIN_TYPES } from './data';
 
+// Assets
+import logoImg from '../assets/skin.png';
+
 // Components
 import ProductCard from './components/ProductCard';
 import ProductDetailModal from './components/ProductDetailModal';
@@ -522,9 +525,7 @@ export default function App() {
 
           {/* Logo Brand */}
           <div className="flex items-center gap-2">
-            <div className="w-8.5 h-8.5 sm:w-9 sm:h-9 rounded-xl bg-indigo-600 flex items-center justify-center text-white font-extrabold text-base sm:text-lg shadow-sm shrink-0">
-              SE
-            </div>
+            <img src={logoImg} alt="SkinEli" className="w-8.5 h-8.5 sm:w-9 sm:h-9 object-contain shrink-0" />
             <div>
               <span className="font-sans font-semibold text-base sm:text-lg text-slate-900 tracking-tight block leading-none">SkinEli</span>
               <span className="text-[9px] sm:text-[10px] text-indigo-600 font-bold tracking-widest uppercase block mt-0.5 sm:mt-1">Tienda Skincare</span>
@@ -546,8 +547,8 @@ export default function App() {
                   handleResetFilters();
                 }}
                 className={`text-sm font-semibold tracking-wide transition-all pb-1.5 border-b-2 cursor-pointer ${activeMenuTab === tab.id
-                    ? 'border-indigo-600 text-indigo-900 font-bold'
-                    : 'border-transparent text-slate-500 hover:text-indigo-600'
+                  ? 'border-indigo-600 text-indigo-900 font-bold'
+                  : 'border-transparent text-slate-500 hover:text-indigo-600'
                   }`}
               >
                 {tab.label}
@@ -566,7 +567,7 @@ export default function App() {
               className="w-full text-xs bg-slate-50 border border-slate-200 focus:border-indigo-600 focus:bg-white focus:shadow-3xs rounded-full pl-9 pr-8 py-2 text-slate-850 focus:outline-hidden transition-all duration-300"
             />
             {searchQuery && (
-              <button 
+              <button
                 onClick={() => setSearchQuery('')}
                 className="absolute right-3 text-slate-400 hover:text-slate-650 text-xs font-bold cursor-pointer"
               >
@@ -680,7 +681,7 @@ export default function App() {
                   className="w-full text-xs sm:text-sm bg-white border border-slate-200 focus:border-indigo-600 rounded-xl pl-10 pr-8 py-2.5 text-slate-850 focus:outline-hidden"
                 />
                 {searchQuery && (
-                  <button 
+                  <button
                     onClick={() => setSearchQuery('')}
                     className="absolute right-3 top-3 text-slate-400 hover:text-slate-600 text-xs font-bold cursor-pointer"
                   >
@@ -707,8 +708,8 @@ export default function App() {
                 handleResetFilters();
               }}
               className={`px-3 py-1 rounded-full text-xs font-semibold whitespace-nowrap transition-all cursor-pointer ${activeMenuTab === tab.id
-                  ? 'bg-indigo-600 text-white shadow-3xs'
-                  : 'bg-slate-100 text-slate-650 hover:bg-slate-250'
+                ? 'bg-indigo-600 text-white shadow-3xs'
+                : 'bg-slate-100 text-slate-650 hover:bg-slate-250'
                 }`}
             >
               {tab.label}
@@ -909,7 +910,7 @@ export default function App() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 border-b border-slate-800 pb-6">
             <div className="flex items-center gap-2">
-              <div className="w-8 h-8 rounded-lg bg-indigo-600 text-white flex items-center justify-center font-bold">SE</div>
+              <img src={logoImg} alt="SkinEli" className="w-8 h-8 object-contain shrink-0" />
               <span className="font-sans font-semibold text-sm text-slate-100 tracking-tight">SkinEli Skincare Store</span>
             </div>
 
