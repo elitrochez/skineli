@@ -1,0 +1,6 @@
+{
+  "name": "Dermacare Skincare",
+  "description": "Tienda online de cuidado de la piel con rutina esencial de 4 pasos: limpiar, tratar, hidratar y proteger.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
