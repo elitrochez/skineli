@@ -527,7 +527,7 @@ export default function App() {
           <div className="flex items-center gap-2">
             <img src={logoImg} alt="SkinEli" className="w-8.5 h-8.5 sm:w-9 sm:h-9 object-contain shrink-0" />
             <div>
-              <span className="font-sans font-semibold text-base sm:text-lg text-slate-900 tracking-tight block leading-none">SkinEli</span>
+              <span className="font-sans font-semibold text-base sm:text-lg text-slate-900 tracking-tight block leading-none">SkinElii</span>
               <span className="text-[9px] sm:text-[10px] text-indigo-600 font-bold tracking-widest uppercase block mt-0.5 sm:mt-1">Tienda Skincare</span>
             </div>
           </div>
